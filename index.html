@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beklar Shop</title>
+    <style>
+        button {
+            min-width: 300;
+            height: 100px;
+            background-color: greenyellow;
+            border-radius: 15px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olloh omadimizni bersin</h1>
+    <div class="button">
+        <button onclick="openWebsite()">Simsiz quloqchinni ko'rish</button>
+
+        <button onclick="openWebsite2()">Ibodati Islomiya kitobini ko'rish</button>
+    </div>
+    <div class="body">
+        <div id="iframe-container"></div>
+
+        <div id="iframe-container2"></div>
+    </div>
+
+
+    <script>
+        function openWebsite() {
+            var iframeContainer = document.getElementById("iframe-container");
+            iframeContainer.innerHTML = ""
+            var iframe = document.createElement("iframe");
+            iframe.src = "https://inbaza.uz/link/cmKSU8";
+            iframe.width = "350";
+            iframe.height = "300";
+            iframeContainer.appendChild(iframe);
+        }
+        function openWebsite2() {
+            var iframeContainer = document.getElementById("iframe-container2");
+            iframeContainer.innerHTML = ""
+            var iframe = document.createElement("iframe");
+            iframe.src = "https://inbaza.uz/link/h6Zh9p";
+            iframe.width = "350";
+            iframe.height = "300";
+            iframeContainer.appendChild(iframe);
+        }
+    </script>
+</body>
+
+</html>
